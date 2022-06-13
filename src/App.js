@@ -13,11 +13,13 @@ function App() {
       
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route path='/' exact element={<Home />} />
-          <Route path='/movie/:imdbID' element={<MovieDetail />}/>
-          <Route path='*' element={<PageNotFound />} />
-        </Routes>
+        <div className='container'>
+          <Routes>
+            <Route path='/' exact element={<Home />} />
+            <Route path='/movie/:imdbID' element={<MovieDetail />}/>
+            <Route path='*' element={<PageNotFound />} />
+          </Routes>
+        </div>
         <Footer />
       </BrowserRouter>
     </div>
