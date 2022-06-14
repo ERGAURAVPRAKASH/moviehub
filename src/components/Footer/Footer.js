@@ -5,7 +5,9 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div>Movie App</div>
-      <div> No &#169; Use as per your wish 	&#128515; ~Gaurav Prakash </div>
+      <div> 
+        No &#169;, API used: <a href='http://www.omdbapi.com' target="_blank">http://www.omdbapi.com</a> by ~Gaurav Prakash <i className="fa fa-envelope" aria-hidden="true"></i> : <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ergauravprakash@gmail.com" target="_blank"><i>ergauravprakash@gmail.com</i></a>
+      </div>
     </div>
   )
 }
