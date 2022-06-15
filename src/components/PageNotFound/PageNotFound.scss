@@ -1,0 +1,33 @@
+@import "../../common/colors.scss";
+
+
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    .oops{
+        font-size: 100px;
+        color: rgb(1, 99, 160) ;
+    }
+    .not-found{
+        font-size: 50px;
+        color: gray;
+    }
+
+    .back-button{
+        margin-top: 10px;
+        
+        button{
+            font-size: 18px;
+            font-weight: 500;
+            border: transparent;
+            width: 150px;
+            cursor: pointer;
+            background-color: $font-secondary;
+            padding: 8px 0px;
+        }
+    }
+
+}

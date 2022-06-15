@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import "./Header.scss";
 import { Link } from 'react-router-dom';
-import user from "../../images/user.png";
 import { useDispatch } from 'react-redux';
 import { fetchAsyncMovies, fetchAsyncShows } from '../../features/movies/movieSlice';
 
@@ -24,7 +23,7 @@ const Header = () => {
     <div className='header'>
       <Link to="/">
         <div className='logo'>
-          Movie App
+          Movie Hub
         </div>
       </Link>
       <div className='search-bar'>
@@ -39,9 +38,6 @@ const Header = () => {
             <i className='fa fa-search'></i>
           </button>
         </form>
-      </div>
-      <div className='user-image'>
-        <img src={user} alt="user" />
       </div>
     </div>
   )
